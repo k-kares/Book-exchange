@@ -21,6 +21,7 @@ namespace Book_exchange
     /// </summary>
     public partial class MainWindow : Window
     {
+        public bool LoggedIn = false;
         public MainWindow()
         {
             InitializeComponent();
@@ -38,7 +39,15 @@ namespace Book_exchange
 
         private void btnMyLists_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new ListsPage();
+            if (!LoggedIn)
+            {
+                Main.Content = new NotLoggedInListsPage();
+            }
+            else
+            {
+                Main.Content = new ListsPage();
+            }
+            
         }
     }
 }
