@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Book_exchange.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,9 +26,19 @@ namespace Book_exchange
             InitializeComponent();
         }
 
-        private void btnLists_Click(object sender, RoutedEventArgs e)
+        private void btnBrowse_Click(object sender, RoutedEventArgs e)
         {
+            Main.Content = new BrowsePage();
+        }
 
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new HomePage();
+        }
+
+        private void btnMyLists_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new ListsPage();
         }
     }
 }

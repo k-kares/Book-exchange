@@ -12,6 +12,7 @@
     <None Remove="Images\book exchange logo.jpeg" />
     <None Remove="Images\LoginPic.jpg" />
     <None Remove="Images\LoginPicture.jpg" />
+    <None Remove="Images\ReadTogether.PNG" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +20,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\LoginPicture.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ReadTogether.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
