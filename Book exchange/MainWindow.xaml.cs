@@ -1,4 +1,5 @@
 ﻿using Book_exchange.Pages;
+using Book_exchange.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,7 +48,12 @@ namespace Book_exchange
             {
                 Main.Content = new ListsPage();
             }
-            
+        }
+
+        private void UserLogin_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Window w1 = new LoginWindow();
+            w1.Show();
         }
     }
 }
