@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Book_exchange
+namespace Book_exchange.controls
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UserLogin.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UserLogin : UserControl
     {
-        public MainWindow()
+        public UserLogin()
         {
             InitializeComponent();
-        }
-
-        private void btnLists_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

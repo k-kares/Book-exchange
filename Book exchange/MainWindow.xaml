@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Book_exchange"
+        xmlns:local="clr-namespace:Book_exchange" xmlns:local1="clr-namespace:Book_exchange.controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -55,7 +55,7 @@
                 </Button.Resources>
             </Button>
 
-            <Button x:Name="btnLists" Grid.Column="3" Margin="5" Content="Browse" FontWeight="Bold" Foreground="Black" FontSize="20" FontFamily="Comic Sans MS">
+            <Button x:Name="btnLists" Grid.Column="3" Margin="5" Content="Browse" FontWeight="Bold" Foreground="Black" FontSize="20" FontFamily="Comic Sans MS" Click="btnLists_Click">
                 <Button.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1, 1">
                         <GradientStop Color="#56CCFF" Offset="0" />
@@ -68,6 +68,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
+            <local1:UserLogin Grid.Column="5"> </local1:UserLogin>
         </Grid>
     </Grid>
 </Window>

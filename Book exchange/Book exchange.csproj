@@ -10,10 +10,15 @@
 
   <ItemGroup>
     <None Remove="Images\book exchange logo.jpeg" />
+    <None Remove="Images\LoginPic.jpg" />
+    <None Remove="Images\LoginPicture.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Images\book exchange logo.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\LoginPicture.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
