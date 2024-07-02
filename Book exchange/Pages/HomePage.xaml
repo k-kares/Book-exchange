@@ -4,15 +4,90 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Book_exchange.Pages"
+      xmlns:local1="clr-namespace:Book_exchange.controls"
       mc:Ignorable="d"
       Title="HomePage" >
     <ScrollViewer VerticalScrollBarVisibility="Hidden">
         <StackPanel Background="White">
             <Image Source="/Images/ReadTogether.PNG" Margin=" 10, 5"></Image>
+
             <Border Margin="10, 15" BorderBrush="Gray" BorderThickness="1"></Border>
-            <Image Source="/Images/ReadTogether.PNG" Margin=" 10, 5"></Image>
-            <Image Source="/Images/ReadTogether.PNG" Margin=" 10, 5"></Image>
-            <Image Source="/Images/ReadTogether.PNG" Margin=" 10, 5"></Image>
+            <Grid Height="250">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="3*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Foreground="SlateGray">Trending now</TextBlock>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    
+                    <local1:Book Grid.Column="0" Margin="10, 0"></local1:Book>
+                    <local1:Book Grid.Column="1" Margin="10, 0"></local1:Book>
+                    <local1:Book Grid.Column="2" Margin="10, 0"></local1:Book>
+                    <local1:Book Grid.Column="3" Margin="10, 0"></local1:Book>
+                    <local1:Book Grid.Column="4" Margin="10, 0"></local1:Book>
+                    
+                </Grid>
+            </Grid>
+
+            <Border Margin="10, 15" BorderBrush="Gray" BorderThickness="1"></Border>
+
+            <Grid Height="250">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="3*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Foreground="SlateGray">Recently added</TextBlock>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <local1:Book Grid.Column="0" Margin="10, 0"></local1:Book>
+                    <local1:Book Grid.Column="1" Margin="10, 0"></local1:Book>
+                    <local1:Book Grid.Column="2" Margin="10, 0"></local1:Book>
+                    <local1:Book Grid.Column="3" Margin="10, 0"></local1:Book>
+                    <local1:Book Grid.Column="4" Margin="10, 0"></local1:Book>
+
+                </Grid>
+            </Grid>
+
+            <Border Margin="10, 15" BorderBrush="Gray" BorderThickness="1"></Border>
+
+            <Grid Height="250">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="3*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Foreground="SlateGray">Best rated</TextBlock>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <local1:Book Grid.Column="0" Margin="10, 0"></local1:Book>
+                    <local1:Book Grid.Column="1" Margin="10, 0"></local1:Book>
+                    <local1:Book Grid.Column="2" Margin="10, 0"></local1:Book>
+                    <local1:Book Grid.Column="3" Margin="10, 0"></local1:Book>
+                    <local1:Book Grid.Column="4" Margin="10, 0"></local1:Book>
+
+                </Grid>
+            </Grid>
+
             <Frame Height="50" Background="LightGray" Content="BookExchange.com">
                 
             </Frame>

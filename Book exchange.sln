@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book exchange", "Book exchange\Book exchange.csproj", "{761E2E31-6CBC-4666-9B13-3A7B38CE02FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Book exchange", "Book exchange\Book exchange.csproj", "{761E2E31-6CBC-4666-9B13-3A7B38CE02FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookExchangeApi", "BookExchangeApi\BookExchangeApi.csproj", "{04C06CFA-EDE2-44FA-8D23-99582953DD57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{761E2E31-6CBC-4666-9B13-3A7B38CE02FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{761E2E31-6CBC-4666-9B13-3A7B38CE02FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{761E2E31-6CBC-4666-9B13-3A7B38CE02FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04C06CFA-EDE2-44FA-8D23-99582953DD57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04C06CFA-EDE2-44FA-8D23-99582953DD57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04C06CFA-EDE2-44FA-8D23-99582953DD57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04C06CFA-EDE2-44FA-8D23-99582953DD57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
