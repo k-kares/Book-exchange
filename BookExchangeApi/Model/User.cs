@@ -12,5 +12,6 @@
         public ICollection<BookReview> BookReviews { get; set; } = new List<BookReview>();
         public ICollection<FavouriteBooks> FavouriteBooks { get; set; } = new List<FavouriteBooks>();
         public ICollection<Message> Messages { get; set; } = new List<Message>();
+        public ICollection<UserGroup> UserGroups { get; set; } = new List<UserGroup>();
     }
 }

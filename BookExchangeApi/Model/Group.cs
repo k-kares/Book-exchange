@@ -8,6 +8,7 @@
         public int GroupTypeId { get; set; }
         public GroupType GroupType { get; set; }
         public ICollection<Message> Messages { get; set; } = new List<Message>();
+        public ICollection<UserGroup> UserGroups { get; set; } = new List<UserGroup>();
 
     }
 }

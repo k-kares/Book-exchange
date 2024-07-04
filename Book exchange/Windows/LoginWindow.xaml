@@ -14,7 +14,27 @@
                     <ImageBrush Stretch="Fill" ImageSource="/Images/book exchange logo.jpeg"/>
                 </Border.Background>
             </Border>
-            
+
+            <Label FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Left"
+                    FontWeight="Bold" Margin="15, 1" Foreground="Black">
+                Username
+            </Label>
+
+            <TextBox FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"
+                FontWeight="Bold" Margin="10" Foreground="Black" Width="170" x:Name="tbUsername" >
+            </TextBox>
+
+            <Label FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Left"
+                FontWeight="Bold" Margin="15, 1" Foreground="Black">
+                Password
+            </Label>
+
+            <PasswordBox  FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Left"
+                FontWeight="Bold" Margin="10" Foreground="Black" Width="170" x:Name="pbPass">
+            </PasswordBox>
+
+            <Button Click="ButtonLogin_Click" Margin="7">Login</Button>
+
             <Button Click="Button_Click" Margin="7">close</Button>
         </StackPanel>
     </Border>

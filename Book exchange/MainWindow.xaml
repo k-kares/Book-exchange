@@ -68,7 +68,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <local1:UserLogin Grid.Column="5" MouseDoubleClick="UserLogin_MouseDoubleClick"></local1:UserLogin>
+            <local1:UserLogin Grid.Column="5" MouseDoubleClick="UserLogin_MouseDoubleClick" x:Name="loginn"></local1:UserLogin>
             
         </Grid>
         <Frame Name="Main" Grid.Row="1" NavigationUIVisibility="Hidden"/>
